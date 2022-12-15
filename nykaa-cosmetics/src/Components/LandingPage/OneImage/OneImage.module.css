@@ -1,0 +1,22 @@
+.mainDiv{
+    width: 90%;
+    height: 120px;
+    margin: auto;
+    margin-top: 30px;
+}
+.image{
+    height: 100%;
+    border-radius: 10px;
+}
+.twoImage{
+    border-radius: 10px;
+    width: 49%;
+    margin-top: 40px;
+}
+.TIdiv{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    /* border: 1px solid; */
+}

@@ -1,0 +1,9 @@
+.mainDiv{
+    width: 68%;
+    /* background-color: rgb(173, 222, 222); */
+    margin: auto;
+    height: auto;
+    display: flex;
+    padding-top: 1%;
+    padding-bottom: 4%;
+}

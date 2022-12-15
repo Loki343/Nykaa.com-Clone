@@ -1,0 +1,16 @@
+.mainDiv{
+    width: 55%;
+    margin: auto;
+    /* background-color: aquamarine; */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.eachMenuItem{
+    height: 15px;
+    font-size: 10px;
+}
+.eachMenuItem:hover{
+    color: deeppink;
+}
