@@ -1,0 +1,19 @@
+.mainDiv{
+    /* background:#d8d2df; */
+    height:65px;
+    display:flex
+}
+.sec{
+    font-size: 12px;
+    font-weight: 500;
+}
+.signin{
+    width: 80px;
+    color: white;
+    background-color: deeppink;
+    height: 36px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 100px;
+}

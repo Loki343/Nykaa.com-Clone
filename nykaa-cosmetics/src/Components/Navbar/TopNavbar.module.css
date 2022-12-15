@@ -1,0 +1,23 @@
+.mainDiv{
+    width: 100%;
+    background-image: url(https://adn-static1.nykaa.com/media/wysiwyg/2021/common-strip.jpg);
+    height: 33px;
+    display: flex;
+    
+}
+.innerDiv{
+    width: 60%;
+    /* background-color: teal; */
+    margin-left: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    height: 17px;
+    margin-top: 3px
+}
+.logoText{
+    margin-top: 2px;
+    font-size: 12.5px;
+}

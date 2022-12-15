@@ -1,0 +1,36 @@
+.productCarousal{
+    position: relative;
+    overflow: hidden;
+    padding: 26px;
+    border: 1px solid;
+    width: 90%;
+    margin: auto;
+}
+.preBtn{
+    background-color: white;
+    border: 1px solid lightgray;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 30px;
+    box-shadow: 0px 0px 10px 1px black;
+}
+.nextBtn{
+    background-color: white;
+    border: 1px solid lightgray;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 45%;
+    right: 30px;
+    position: absolute;
+    box-shadow: 0px 0px 10px 1px black;
+}
+/* .productContainer{
+    padding: 0 10px;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+} */
