@@ -1,0 +1,40 @@
+.mainDiv{
+    /* border: 1px solid; */
+    height: auto;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.leftButton{
+    background-color: white;
+    border: 1px solid gray;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 30px;
+    box-shadow: 0px 0px 10px 1px black;
+}
+.rightButton{
+    background-color: white;
+    border: 1px solid gray;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 45%;
+    right: 30px;
+    position: absolute;
+    box-shadow: 0px 0px 10px 1px black;
+}
+.head{
+    font-size: 24px;
+    font-weight: 700;
+}
+.line{
+    margin-bottom: 5px;
+    color: gray;
+}
+.img{
+    border-radius: 10px;
+}

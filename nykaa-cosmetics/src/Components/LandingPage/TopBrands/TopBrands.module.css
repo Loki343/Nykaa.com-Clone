@@ -1,0 +1,27 @@
+.mainDiv{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    grid-gap: 18px;
+}
+.each{
+    border: 1px solid lightgray;
+    height: 300px;
+    border-radius: 10px;
+}
+.head{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 8%;
+    padding-top: 7px;
+}
+.line{
+    margin-left: 8%;
+    padding-bottom: 5px;
+}
+.img{
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
