@@ -1,0 +1,11 @@
+.twoImage{
+    border-radius: 10px;
+    width: 49%;
+}
+.TIdiv{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}

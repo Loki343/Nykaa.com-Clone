@@ -4,10 +4,10 @@ import { ButtomFooter } from "./ButtomFooter";
 
 export function Footer(){
 return (
-    <>
+    <div style={{marginTop:'30px'}}>
         <TopFooter/>
         <MidFooter/>
         <ButtomFooter/>
-    </>
+    </div>
 )
 }

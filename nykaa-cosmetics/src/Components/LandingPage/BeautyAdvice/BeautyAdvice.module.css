@@ -1,3 +1,31 @@
+.mainDiv{
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid red; */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+.each{
+    width: 49%;
+    border: 1px solid rgb(220,220,220);
+    height: 400px;
+    border-radius: 10px;
+}
+.img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.cap{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.cap2{
+    color: rgb(243, 53, 84);
+    margin-left: 20px;
+}
 .productCarousal{
     position: relative;
     overflow: hidden;
