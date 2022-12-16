@@ -5,7 +5,7 @@ export function SmallHead({head,line}) {
           <h1 style={{ paddingTop: "20px", fontSize: "24px", fontWeight: "700" }}>
             {head}
           </h1>
-          <p style={{ paddingBottom: "5px", color: "gray" }}>{line}</p>
+          <p style={{ paddingBottom: "10px", color: "gray" }}>{line}</p>
         </div>
       </>
     );

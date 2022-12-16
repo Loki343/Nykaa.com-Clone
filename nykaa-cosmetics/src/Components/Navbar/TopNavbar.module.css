@@ -1,14 +1,13 @@
 .mainDiv{
     width: 100%;
     background-image: url(https://adn-static1.nykaa.com/media/wysiwyg/2021/common-strip.jpg);
-    height: 33px;
+    height: 38px;
     display: flex;
-    
 }
 .innerDiv{
-    width: 60%;
+    width: 75%;
     /* background-color: teal; */
-    margin-left: 20%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,4 +19,5 @@
 .logoText{
     margin-top: 2px;
     font-size: 12.5px;
+    font-weight: 600;
 }

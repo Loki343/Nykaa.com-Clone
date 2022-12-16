@@ -1,0 +1,88 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title":"Maybelline New York Fit Me Matte+Poreless Liquid",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/6/66e316c6902395646860.jpg",
+      "price": 419,
+      "brand":"Maybelline"
+    },
+    {
+      "id": 2,
+      "title":"Maybelline New York Lash Sensational Sky High",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/2/8/2844dd0MAYBE00000375.jpg",
+      "price": 639,
+      "brand":"Maybelline"
+    },
+    {
+      "id": 3,
+      "title":"Lakme Absolute Skin Dew Serum Foundation",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/f/d/fdedcfcLAKME00000601_2.jpg",
+      "price": 875,
+      "brand":"Lakme"
+    },
+    {
+      "id": 4,
+      "title":"Lakme 9 to 5 Primer + Matte Powder Foundation Compact",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/2/02e3d0d8901030654886_h.jpg",
+      "price": 374,
+      "brand":"Lakme"
+    },
+    {
+      "id": 5,
+      "title":"Nykaa Matte To Last ! Liquid Lipstick",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/8/9/8904245706234_1_1.jpg",
+      "price": 325,
+      "brand":"Nykaa"
+    },
+    {
+      "id": 6,
+      "title":"Janhvi Kapoor X Nykaa kits - Handbag Heroes",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/c/6/c6bc8dcNYKAC00001479_1a.jpg",
+      "price": 798,
+      "brand":"Nykaa"
+    },
+    {
+      "id": 7,
+      "title":"NIVEA Fruity Shine Lip Balm",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/1/61c47324005900314321_1.jpg",
+      "price": 169,
+      "brand":"Nivea"
+    },
+    {
+      "id": 8,
+      "title":"Nivea Soft Berry Blossom Moisturizing Cream And",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/8/b/8b59b4640062556_Combo4.jpg",
+      "price": 269,
+      "brand":"Nivea"
+    },
+    {
+      "id": 9,
+      "title":"Lotus Herbals Radiant Gold Cellular Glow Facial Kit",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/8/7/87e3dd4806360136010_1.jpg",
+      "price": 214,
+      "brand":"Lotus"
+    },
+    {
+      "id": 10,
+      "title":"Lotus Herbals YouthRx Anti-Ageing Transforming Crème",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/n/y/nybndlot00004.jpg",
+      "price": 1057,
+      "brand":"Lotus"
+    },
+    {
+      "id": 11,
+      "title":"MAC Studio fix fluid",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/a/3/a3ee29a773602103591_rv__1.jpg",
+      "price": 2550,
+      "brand":"MAC"
+    },
+    {
+      "id": 12,
+      "title":"MAC Retro Lipstick",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/8/6/8619cb3773602422029.jpg",
+      "price": 1750,
+      "brand":"MAC"
+    }
+  ]
+}

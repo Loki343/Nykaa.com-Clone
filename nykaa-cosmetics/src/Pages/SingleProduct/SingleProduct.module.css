@@ -1,0 +1,60 @@
+.mainDiv{
+    width: 60%;
+    margin: auto;
+    height: 500px;
+    /* border: 1px solid; */
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 5px;
+}
+.photo{
+    border: 1px solid rgb(185, 183, 183);
+    width: 50%;
+}
+.container{
+    /* border: 1px solid green; */
+    background-color: rgba(248, 174, 203, 0.259);
+    width: 50%;
+}
+.button{
+    margin-top: 20%;
+    border: 1px solid rgb(201, 197, 197);
+    margin-left: 25%;
+    border-radius: 5px;
+    padding: 2px;
+    height: 50px;
+    width: 200px;
+}
+.button:hover{
+    background-color: rgb(252,39,121);
+}
+.button:active{
+    transform: translateY(4px);
+}
+.title{
+    font-weight: 600;
+    font-size: 30px;
+    margin-left: 18px;
+    margin-top: 10px;
+}
+.rating{
+    font-size: 18px;
+    margin-left: 18px;
+    margin-top: 10px;
+}
+.caption{
+    margin-left: 18px;
+    margin-top: 8px;
+}
+.price{
+    font-size: 18px;
+    margin-left: 18px;
+    margin-top: 10px;
+}
+
+.extra{
+    border: 1px solid;
+    width: 92%;
+    margin: auto;
+    margin-top: 20px;
+}

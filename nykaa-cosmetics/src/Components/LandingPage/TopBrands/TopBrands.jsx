@@ -26,7 +26,7 @@ export function TopBrands() {
           line="Pick a travel combo kit on ₹1859, Mini on ₹1199"
         />
         <EachDiv
-          src="https://images-static.nykaa.com/uploads/bf97e2a2-52b2-4dd4-bc35-bf5d5295abbb.jpg?tr=w-400,cm-pad_resize"
+          src="https://images-static.nykaa.com/uploads/3fca8a70-eb60-4c04-bbca-d96ef3cd988e.jpg?tr=w-400,cm-pad_resize"
           head="Up To 15% Off"
           line="#1 Dermatologist Recommended Brand in India"
         />
@@ -51,7 +51,7 @@ export function TopBrands() {
           line="Quality Haircare Without Compromise"
         />
         <EachDiv
-          src="https://images-static.nykaa.com/uploads/90f9bebe-9dd1-46b4-9c5a-4bced3e570c8.jpg?tr=w-400,cm-pad_resize"
+          src="https://images-static.nykaa.com/uploads/4786f77e-d620-4a4e-8163-9532140f189b.jpg?tr=w-400,cm-pad_resize"
           head="Up To 20% Off"
           line="On Entire Range"
         />

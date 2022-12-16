@@ -1,24 +1,27 @@
-import { Stack, Input, Image, Text, Link } from "@chakra-ui/react";
+import { Stack, Input, Image, Text } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import styles from "./MidNavbar.module.css";
 
 export function MidNavbar() {
   return (
-    <div className={styles.mainDiv}>
+    <div className={styles.mainDiv} style={{position:'sticky',top:'38px',zIndex:'10',backgroundColor:'white'}}>
       <Stack
-        marginLeft="17.5%"
-        w="65%"
+        marginLeft="10%"
+        w="80%"
         spacing={5}
         direction="row"
         align="center"
       >
-        <Image
+      <Link style={{width:'100px',marginLeft:'70px',height:'100px'}} to='/'> <Image
           src="https://cdn.iconscout.com/icon/free/png-256/nykaa-3384872-2822953.png"
-          w="7.5%"
-          marginLeft="55"
-        />
+          w="100%"
+          // marginLeft="55"
+        /></Link> 
+        <Link to="/allproducts"><Text className={styles.sec}>
+          AllProducts
+        </Text></Link>
         <Text className={styles.sec}>Categories</Text>
         <Text className={styles.sec}>Brands</Text>
-        <Text className={styles.sec}>Luxe</Text>
         <Text className={styles.sec}>NykaaFashion</Text>
         <Text className={styles.sec}>BeautyAdvice</Text>
         <div style={{ marginLeft: "90px" }}>
@@ -27,13 +30,13 @@ export function MidNavbar() {
             fontSize="12px"
             padding="2px"
             h="35px"
-            w="240%"
+            w="180%"
           />
         </div>
-        <Link>
+        <Link to='/login'>
           <button className={styles.signin}>Sign in</button>
         </Link>
-        <Link>
+        <Link to='/cart'>
           <Image
             marginLeft="5"
             src="https://cdn-icons-png.flaticon.com/128/5337/5337564.png"
