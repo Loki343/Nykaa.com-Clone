@@ -9,80 +9,169 @@
     },
     {
       "id": 2,
+      "title":"Lakme 9 To 5 Primer + Matte Powder Compact",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/d/5/d5221c9LAKME00000681_1.jpg",
+      "price": 699,
+      "brand":"Lakme"
+    },
+    {
+      "id": 3,
+      "title":"Nykaa So Creme! Creamy Matte Lipstick",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/a/0a4f3ef8904245711047_1.jpg",
+      "price": 244,
+      "brand":"Nykaa"
+    },
+    {
+      "id": 4,
+      "title":"M.A.C Strobe Cream / Mini Hydratant Lumineux Pinklite",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/b/0b50cb3773602575534.jpg",
+      "price": 1100,
+      "brand":"MAC"
+    },
+    {
+      "id": 5,
       "title":"Maybelline New York Lash Sensational Sky High",
       "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/2/8/2844dd0MAYBE00000375.jpg",
       "price": 639,
       "brand":"Maybelline"
     },
     {
-      "id": 3,
+      "id": 6,
       "title":"Lakme Absolute Skin Dew Serum Foundation",
       "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/f/d/fdedcfcLAKME00000601_2.jpg",
       "price": 875,
       "brand":"Lakme"
     },
     {
-      "id": 4,
+      "id": 7,
+      "title":"Nykaa All Day Matte Waterproof, Transfer Proof",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/f/5/f57125bNYKAC00000074_1.jpg",
+      "price": 319,
+      "brand":"Nykaa"
+    },
+    {
+      "id": 8,
+      "title":"M.A.C Powder Kiss Velvet Blur Slim Stick",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/3/9/39b317aMACXX00000621_1.jpg",
+      "price": 2700,
+      "brand":"MAC"
+    },
+    {
+      "id": 9,
       "title":"Lakme 9 to 5 Primer + Matte Powder Foundation Compact",
       "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/2/02e3d0d8901030654886_h.jpg",
       "price": 374,
       "brand":"Lakme"
     },
     {
-      "id": 5,
+      "id": 10,
       "title":"Nykaa Matte To Last ! Liquid Lipstick",
       "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/8/9/8904245706234_1_1.jpg",
       "price": 325,
       "brand":"Nykaa"
     },
     {
-      "id": 6,
-      "title":"Janhvi Kapoor X Nykaa kits - Handbag Heroes",
-      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/c/6/c6bc8dcNYKAC00001479_1a.jpg",
-      "price": 798,
+      "id": 11,
+      "title":"Lotus Professional Phyto-Rx Whitening & Brightening Serum",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/n/y/nylotus000025.jpg",
+      "price": 596,
+      "brand":"Lotus"
+    },
+    {
+      "id": 12,
+      "title":"Nivea Soft Light Moisturizer Cream Playful Peach For Hands",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/0/60051adNIVEA00000061_1.jpg",
+      "price": 228,
+      "brand":"Nivea"
+    },
+    {
+      "id": 13,
+      "title":"Nykaa Eyes On Me! 10-in-1 Eyeshadow Palette",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/8/9/8904245710583_1.jpg",
+      "price": 479,
       "brand":"Nykaa"
     },
     {
-      "id": 7,
+      "id": 14,
       "title":"NIVEA Fruity Shine Lip Balm",
       "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/1/61c47324005900314321_1.jpg",
       "price": 169,
       "brand":"Nivea"
     },
     {
-      "id": 8,
+      "id": 15,
+      "title":"Lakme Absolute Matte Ultimate Lip Color",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/2/4/24344_h-8901030724251m_1.jpg",
+      "price": 578,
+      "brand":"Lakme"
+    },
+    {
+      "id": 16,
       "title":"Nivea Soft Berry Blossom Moisturizing Cream And",
       "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/8/b/8b59b4640062556_Combo4.jpg",
       "price": 269,
       "brand":"Nivea"
     },
     {
-      "id": 9,
+      "id": 17,
       "title":"Lotus Herbals Radiant Gold Cellular Glow Facial Kit",
       "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/8/7/87e3dd4806360136010_1.jpg",
       "price": 214,
       "brand":"Lotus"
     },
     {
-      "id": 10,
+      "id": 18,
+      "title":"Maybelline New York Instant Age Rewind Eraser Dark Circles",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/5/3/534de506902395487401.jpg",
+      "price": 525,
+      "brand":"Maybelline"
+    },
+    {
+      "id": 19,
+      "title":"Nivea Soft Combo Pack Of 3",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/d/7/d72bed88904256017350-1.jpg",
+      "price": 267,
+      "brand":"Nivea"
+    },
+    {
+      "id": 20,
       "title":"Lotus Herbals YouthRx Anti-Ageing Transforming Crème",
       "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/n/y/nybndlot00004.jpg",
       "price": 1057,
       "brand":"Lotus"
     },
     {
-      "id": 11,
+      "id": 21,
       "title":"MAC Studio fix fluid",
       "image": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/a/3/a3ee29a773602103591_rv__1.jpg",
       "price": 2550,
       "brand":"MAC"
     },
     {
-      "id": 12,
+      "id": 22,
+      "title":"Lotus Professional Retemin Plant Retinol & Vitamin C ",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/3/b/3b741deLOTAA00000044_NV1.jpg",
+      "price": 556,
+      "brand":"Lotus"
+    },
+    {
+      "id": 23,
+      "title":"Maybelline New York Fit Me Mono Blush",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/3/1/3164e50MAYBE00000412.jpg",
+      "price": 450,
+      "brand":"Maybelline"
+    },
+    {
+      "id": 24,
       "title":"MAC Retro Lipstick",
       "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/8/6/8619cb3773602422029.jpg",
       "price": 1750,
       "brand":"MAC"
+    }
+  ],
+  "prod": [
+    {
+      "id":1
     }
   ]
 }
