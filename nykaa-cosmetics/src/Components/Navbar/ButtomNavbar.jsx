@@ -16,7 +16,7 @@ export function ButtomNavbar() {
         {/* 1st */}
 
         <Menu isLazy>
-          <MenuButton fontSize="11px" color="gray">
+          <MenuButton fontSize="14px" color="gray">
             Makeup
           </MenuButton>
           <MenuList minWidth="150px">
@@ -35,7 +35,7 @@ export function ButtomNavbar() {
         {/* 1st */}
 
         <Menu isLazy>
-          <MenuButton fontSize="11px" color="gray">
+          <MenuButton fontSize="14px" color="gray">
             Skin
           </MenuButton>
           <MenuList>
@@ -53,7 +53,7 @@ export function ButtomNavbar() {
 
         {/* 3st */}
         <Menu isLazy>
-          <MenuButton fontSize="11px" color="gray">
+          <MenuButton fontSize="14px" color="gray">
             Hair
           </MenuButton>
           <MenuList>
@@ -64,7 +64,7 @@ export function ButtomNavbar() {
         </Menu>
         {/* 4st */}
         <Menu isLazy>
-          <MenuButton fontSize="11px" color="gray">
+          <MenuButton fontSize="14px" color="gray">
             Appliances
           </MenuButton>
           <MenuList>
@@ -75,7 +75,7 @@ export function ButtomNavbar() {
         </Menu>
         {/* 5st */}
         <Menu isLazy>
-          <MenuButton fontSize="11px" color="gray">
+          <MenuButton fontSize="14px" color="gray">
             Bath & Body
           </MenuButton>
           <MenuList>
@@ -86,7 +86,7 @@ export function ButtomNavbar() {
         </Menu>
         {/* 6st */}
         <Menu isLazy>
-          <MenuButton fontSize="11px" color="gray">
+          <MenuButton fontSize="14px" color="gray">
             Natural
           </MenuButton>
           <MenuList>
@@ -97,7 +97,7 @@ export function ButtomNavbar() {
         </Menu>
         {/* 7st */}
         <Menu isLazy>
-          <MenuButton fontSize="11px" color="gray">
+          <MenuButton fontSize="14px" color="gray">
             Mom & Baby
           </MenuButton>
           <MenuList>
@@ -108,7 +108,7 @@ export function ButtomNavbar() {
         </Menu>
         {/* 8st */}
         <Menu isLazy>
-          <MenuButton fontSize="11px" color="gray">
+          <MenuButton fontSize="14px" color="gray">
             Health & Wellness
           </MenuButton>
           <MenuList>
@@ -119,7 +119,7 @@ export function ButtomNavbar() {
         </Menu>
         {/* 9st */}
         <Menu isLazy>
-          <MenuButton fontSize="11px" color="gray">
+          <MenuButton fontSize="14px" color="gray">
             Men
           </MenuButton>
           <MenuList>
@@ -130,7 +130,7 @@ export function ButtomNavbar() {
         </Menu>
         {/* 10st */}
         <Menu isLazy>
-          <MenuButton fontSize="11px" color="gray">
+          <MenuButton fontSize="14px" color="gray">
             Fragrance
           </MenuButton>
           <MenuList>
@@ -141,7 +141,7 @@ export function ButtomNavbar() {
         </Menu>
         {/* 11st */}
         <Menu isLazy>
-          <MenuButton fontSize="11px" color="gray">
+          <MenuButton fontSize="14px" color="gray">
             Pop Ups
           </MenuButton>
           <MenuList>

@@ -21,6 +21,8 @@
 .title{
     text-align: center;
     margin-top: 10px;
+    font-weight: 500;
+    color: rgb(252,39,121);
 }
 .price{
     margin-top: 4px;
@@ -38,15 +40,76 @@
 }
 .button{
     margin-top: 6px;
-    border: 1px solid rgb(201, 197, 197);
+    border: 1px solid rgb(252,39,121);
     margin-left: 27%;
     border-radius: 5px;
     padding: 10px;
-    
+    color: rgb(252,39,121);
 }
 .button:hover{
     background-color: rgba(252, 39, 121, 0.226);
 }
 .button:active{
     transform: translateY(2px);
+}
+.button:disabled{
+    cursor: not-allowed;
+    background-color: rgb(146, 196, 196);
+}
+.buttonDiv{
+    width: 30%;
+    /* border: 1px solid; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.button1{
+    font-size: 22px;
+    color:rgb(252,39,121) ;
+    border: 1px solid rgb(252,39,121);
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+}
+.button2{
+    font-size: 22px;
+    color:rgb(252,39,121) ;
+    border: 1px solid rgb(252,39,121);
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+
+}
+.button1:hover{
+    background-color: rgba(234, 123, 164, 0.373)
+}
+.button1:disabled{
+    background-color: rgba(0, 128, 128, 0.248);
+    cursor: not-allowed;
+}
+
+.sortFilter{
+    width: 20%;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 10px;
+}
+
+.sorting{
+    border: 1px solid rgb(252,39,121);
+    color:rgb(252,39,121) ;
+    padding: 10px;
+    border-radius: 5px;
+}
+.sorting:hover{
+    background-color: rgba(252, 39, 121, 0.226);
+}
+.filtering{
+    border: 1px solid rgb(252,39,121);
+    color:rgb(252,39,121) ;
+    padding: 10px;
+    border-radius: 5px;
+}
+.filtering:hover{
+    background-color: rgba(252, 39, 121, 0.226);
 }

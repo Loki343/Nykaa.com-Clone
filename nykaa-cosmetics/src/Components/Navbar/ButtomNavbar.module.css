@@ -1,11 +1,12 @@
 .mainDiv{
-    width: 70%;
+    width: 72%;
     margin: auto;
     /* background-color: aquamarine; */
     height: 40px;
     display: flex;
     align-items: center;
     gap: 25px;
+    justify-content: space-between;
 }
 .eachMenuItem{
     height: 15px;

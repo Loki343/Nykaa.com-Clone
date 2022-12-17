@@ -1,7 +1,7 @@
 import styles from "./TopNavbar.module.css";
 export function TopNavbar() {
   return (
-    <div style={{position:'sticky',top:'0px',zIndex:'10'}}>
+    <div style={{position:'sticky',top:'0px',zIndex:'1000'}}>
       <div className={styles.mainDiv}>
         <div className={styles.innerDiv}>
           <div>BEAUTY BONANZA Get Your Daily Dose Of Amazing Deals</div>

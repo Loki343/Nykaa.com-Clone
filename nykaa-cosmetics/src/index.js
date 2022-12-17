@@ -5,14 +5,18 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider } from "@chakra-ui/react";
 import { BrowserRouter } from "react-router-dom";
+import { CartContextProvider } from './Components/CartContext/CartContextProvider';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
+  <ChakraProvider>
+<CartContextProvider>
   <BrowserRouter>
-    <ChakraProvider>
       <App />
-    </ChakraProvider>
   </BrowserRouter>
+  </CartContextProvider>
+  </ChakraProvider>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
