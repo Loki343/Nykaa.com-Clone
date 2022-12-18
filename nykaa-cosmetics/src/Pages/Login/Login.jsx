@@ -17,11 +17,11 @@ function Login() {
   const [Password, setPassword] = useState("");
   const [load, setload] = useState(false);
   const navigate = useNavigate();
-  const { loginUser,logoutUser } = useContext(AuthContext);
+  const { loginUser } = useContext(AuthContext);
 
   const submitLogin = async () => {
     setload(true);
-
+    console.log(load);
     try {
       let res = await fetch(`https://mockserver-fhbg.onrender.com/users`);
       let data = await res.json();
@@ -31,12 +31,12 @@ function Login() {
         if (data[i].email === email && data[i].Password === Password) {
           Auth = true;
           loginUser(data[i].name);
-          console.log(data[i].name)
+          console.log(data[i].name);
           break;
         }
       }
       setload(false);
-      if (Auth == false) {
+      if (Auth === false) {
         alert("Please enter right email or password!");
       } else {
         alert("Login Successfull!");
@@ -55,14 +55,14 @@ function Login() {
   return (
     <div>
       <div className={styles.mainDiv}>
-          <Heading
-            fontFamily="cursive"
-            color="rgb(252,39,121)"
-            textAlign='center'
-          >
-            Sign in
-          </Heading>
-          {/* <Button onClick={logoutUser} marginLeft='80%'>Sign out</Button> */}
+        <Heading
+          fontFamily="cursive"
+          color="rgb(252,39,121)"
+          textAlign="center"
+        >
+          Sign in
+        </Heading>
+        {/* <Button onClick={logoutUser} marginLeft='80%'>Sign out</Button> */}
         <FormControl>
           <FormLabel>Email address</FormLabel>
           <Input

@@ -21,7 +21,6 @@ import {
   TableContainer,
   Image,
   Heading,
-  Link,
 } from "@chakra-ui/react";
 import { checkout, removeFromCart } from "../../Components/CartContext/action";
 import { CartContext } from "../../Components/CartContext/CartContextProvider";
@@ -38,6 +37,7 @@ const Cart = () => {
     dispatch(checkout());
     onClose();
     navigate("/");
+    alert("Your is Placed!!Keep shopping")
   };
 
   return (
@@ -72,10 +72,10 @@ const Cart = () => {
                   <Image w="30%" src={cartItem.image} alt="" />
                 </Td>
                 <Td fontSize={{ base: "xs", md: "md" }}>{cartItem.title}</Td>
-                <Td fontSize={{ base: "xs", md: "md" }}>{cartItem.price}</Td>
+                <Td fontSize={{ base: "xs", md: "md" }}>₹ {cartItem.price}</Td>
                 <Td fontSize={{ base: "xs", md: "md" }}>
                   <Button onClick={() => dispatch(removeFromCart(cartItem.id))}>
-                    Remove From Cart
+                    Remove From Cart ✖
                   </Button>
                 </Td>
               </Tr>
@@ -86,7 +86,7 @@ const Cart = () => {
               <Th fontSize={{ base: "xs", md: "md" }}>Final Price</Th>
               <Th fontSize={{ base: "xs", md: "md" }}>...</Th>
               <Th fontSize={{ base: "xs", md: "md" }}>
-                {Math.round(state.reduce((a, c) => a + c.price, 0))}
+              ₹ {Math.round(state.reduce((a, c) => a + c.price, 0))}
               </Th>
             </Tr>
           </Tfoot>

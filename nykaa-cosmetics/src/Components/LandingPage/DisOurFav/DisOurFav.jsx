@@ -1,4 +1,4 @@
-import { Heading } from "@chakra-ui/react";
+// import { Heading } from "@chakra-ui/react";
 import { SmallHead } from "../SmallComp/SmallHead";
 import styles from "./DisOurFav.module.css";
 import { OneImage } from './../OneImage/OneImage';

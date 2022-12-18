@@ -1,6 +1,6 @@
 import styles from "./GiftAtNykaa.module.css";
 import { SmallHead } from "./../SmallComp/SmallHead";
-import { TwoImage } from "../OneImage/OneImage";
+// import { TwoImage } from "../OneImage/OneImage";
 
 export function GiftAtNykaa() {
   return (
