@@ -14,14 +14,14 @@ useEffect(()=>{
     .catch((err)=>console.log(err))
 },[])
   return (
-    <div>
+    <div style={{backgroundColor:'rgb(253,234,242)',marginTop:'-10px',marginBottom:'-30px',paddingBottom:'30px'}}>
         <Heading fontFamily='cursive' color='rgb(252,39,121)' fontWeight='500' marginTop='10px' textAlign='center'>{data.brand} Product</Heading>
       <div className={styles.mainDiv}>
         <img className={styles.photo} src={data.image} alt="" />
         <div className={styles.container}>
             <p className={styles.title}>{data.title}</p>
             <p className={styles.rating}>★ ★ ★ ★ ☆ 4/5 | 3274 ratings & 1693 reviews</p>
-            <p className={styles.price}>MRP : {data.price} 34% 0ff</p>
+            <p className={styles.price}>MRP ₹ {data.price} 34% 0ff</p>
             <p className={styles.caption}>inclusive of all taxes</p>
             <div className={styles.extra}>
                 <img width='100%' src="https://images-static.nykaa.com/uploads/fc68d953-2b29-42f9-8df6-5ee176ad8d01.jpg?tr=w-600,cm-pad_resize" alt="i" />

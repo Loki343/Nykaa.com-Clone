@@ -22,7 +22,7 @@ function ProductCard({ src, title, price, brand, id, onClick, disabled }) {
           <img className={styles.photo} src={src} alt="i" />
           <p className={styles.title}>{title}</p>
         </Link>
-        <p className={styles.price}>MRP(₹) {price}</p>
+        <p className={styles.price}>MRP(₹) : {price}</p>
         <p className={styles.brand}>Brand : {brand}</p>
         <p className={styles.rating}>Rating : ★★★★☆</p>
         <button disabled={disabled} className={styles.button} onClick={onClick}>
