@@ -17,3 +17,10 @@
     font-weight: 500;
     margin-left: 100px;
 }
+.showName{
+    /* padding-left:6%; */
+    display: flex;
+    /* border: 1px solid; */
+    
+
+}

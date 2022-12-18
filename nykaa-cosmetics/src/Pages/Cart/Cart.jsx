@@ -21,19 +21,23 @@ import {
   TableContainer,
   Image,
   Heading,
+  Link,
 } from "@chakra-ui/react";
 import { checkout, removeFromCart } from "../../Components/CartContext/action";
 import { CartContext } from "../../Components/CartContext/CartContextProvider";
-import styles from './Cart.module.css'
+import styles from "./Cart.module.css";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const { state, dispatch } = useContext(CartContext);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const cancelRef = React.useRef();
+  const navigate = useNavigate();
 
   const handleCheckout = () => {
     dispatch(checkout());
     onClose();
+    navigate("/");
   };
 
   return (
@@ -46,7 +50,7 @@ const Cart = () => {
       >
         Your Cart
       </Heading>
-      <TableContainer mt='30px'>
+      <TableContainer mt="30px">
         <Table
           variant="simple"
           colorScheme="gray"
@@ -64,7 +68,7 @@ const Cart = () => {
           <Tbody>
             {state.map((cartItem) => (
               <Tr key={cartItem.id}>
-                <Td width='350px' fontSize={{ base: "xs", md: "md" }}>
+                <Td width="350px" fontSize={{ base: "xs", md: "md" }}>
                   <Image w="30%" src={cartItem.image} alt="" />
                 </Td>
                 <Td fontSize={{ base: "xs", md: "md" }}>{cartItem.title}</Td>
@@ -111,6 +115,7 @@ const Cart = () => {
                 <Button ref={cancelRef} onClick={onClose}>
                   Cancle
                 </Button>
+
                 <Button colorScheme="red" onClick={handleCheckout} ml={3}>
                   Yes
                 </Button>

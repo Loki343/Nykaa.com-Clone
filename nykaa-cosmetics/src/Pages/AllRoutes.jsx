@@ -6,6 +6,7 @@ import Signup from "./Signup/Signup";
 import { LandingPage } from "../Components/LandingPage/LandingPage.jsx";
 import Cart from './Cart/Cart';
 import { SingleProduct } from './SingleProduct/SingleProduct';
+import PrivateRoute from "./PrivateRoute";
 
 function AllRoutes() {
   return (
@@ -15,7 +16,7 @@ function AllRoutes() {
         <Route path="/allproducts" element={<AllProducts />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/cart" element={<PrivateRoute><Cart /></PrivateRoute>} />
         <Route path="/allproducts/:id" element={<SingleProduct />} />
       </Routes>
     </div>
