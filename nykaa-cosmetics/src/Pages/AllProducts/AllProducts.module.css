@@ -47,14 +47,15 @@
     color: rgb(252,39,121);
 }
 .button:hover{
-    background-color: rgba(252, 39, 121, 0.226);
+    background-color: rgba(174, 160, 165, 0.226);
 }
 .button:active{
     transform: translateY(2px);
 }
 .button:disabled{
     cursor: not-allowed;
-    background-color: rgb(146, 196, 196);
+    background-color: rgb(252,39,121);
+    color: white;
 }
 .buttonDiv{
     width: 30%;
@@ -80,11 +81,12 @@
 
 }
 .button1:hover{
-    background-color: rgba(234, 123, 164, 0.373)
+    background-color: rgba(247, 233, 238, 0.373)
 }
 .button1:disabled{
-    background-color: rgba(0, 128, 128, 0.248);
+    background-color: rgb(252,39,121) ;
     cursor: not-allowed;
+    color: white;
 }
 
 .sortFilter{
@@ -102,7 +104,7 @@
     border-radius: 5px;
 }
 .sorting:hover{
-    background-color: rgba(252, 39, 121, 0.226);
+    background-color: rgba(248, 235, 240, 0.226);
 }
 .filtering{
     border: 1px solid rgb(252,39,121);
@@ -111,5 +113,5 @@
     border-radius: 5px;
 }
 .filtering:hover{
-    background-color: rgba(252, 39, 121, 0.226);
+    background-color: rgba(242, 233, 236, 0.226);
 }

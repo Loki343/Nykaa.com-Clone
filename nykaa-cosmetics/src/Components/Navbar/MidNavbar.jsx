@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { AuthContext } from "./../../Context/AuthContext";
 
 export function MidNavbar() {
-  const { isAuth, name } = useContext(AuthContext);
+  const { isAuth, name, logoutUser } = useContext(AuthContext);
   console.log(isAuth);
   return (
     <div
@@ -54,10 +54,11 @@ export function MidNavbar() {
         </div>
         {isAuth ? (
           <div className={styles.showName}>
-            
-            <p style={{color:'rgb(252,39,121)',fontWeight:'600'}}>{name} |</p>
+            <p style={{ color: "rgb(252,39,121)", fontWeight: "600" }}>
+              {name} |
+            </p>
             <Link to="/login">
-              <p>| Logout</p>
+              <p onClick={logoutUser}>| Logout</p>
             </Link>
           </div>
         ) : (

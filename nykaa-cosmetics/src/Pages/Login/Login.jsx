@@ -62,7 +62,7 @@ function Login() {
           >
             Sign in
           </Heading>
-          <Button onClick={logoutUser} marginLeft='80%'>Sign out</Button>
+          {/* <Button onClick={logoutUser} marginLeft='80%'>Sign out</Button> */}
         <FormControl>
           <FormLabel>Email address</FormLabel>
           <Input
