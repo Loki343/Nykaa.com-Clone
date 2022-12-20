@@ -1,6 +1,6 @@
 <h1>Nykaa Cosmetics  - Clone </h1>
 
-![1](https://drive.google.com/file/d/10RYYQIhDJa6_UPAboy2Tuud5O0tTQ4XJ/view?usp=share_link)
+![Untitled](https://user-images.githubusercontent.com/106387298/208610674-da39bb58-1de1-4098-913e-a529c504e59a.png)
 
 
 Nykaa.com is an Indian e-commerce company, founded by Falguni Nayar in 2012 and headquartered in Mumbai. It sells beauty, wellness and fashion products across websites, mobile apps and 100+ offline stores.[4] In 2020, it became the first Indian unicorn startup headed by a woman.
