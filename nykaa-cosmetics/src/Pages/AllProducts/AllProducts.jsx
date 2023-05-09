@@ -1,3 +1,4 @@
+
 import styles from "./AllProducts.module.css";
 import { Heading } from "@chakra-ui/react";
 import { useState, useContext } from "react";
@@ -60,16 +61,16 @@ function AllProducts() {
   useEffect(() => {
     let apiUrl;
     if(filterBy){
-      apiUrl = `http://localhost:8080/products?_limit=${limit}&_page=${page}&brand=${filterBy}`;
+      apiUrl = `https://wandering-clam-jacket.cyclic.app/NykaaProducts?_limit=${limit}&_page=${page}&brand=${filterBy}`;
     }
     else if (orderBy) {
-      apiUrl = `http://localhost:8080/products?_limit=${limit}&_page=${page}&_sort=${sort}&_order=${orderBy}`;
+      apiUrl = `https://wandering-clam-jacket.cyclic.app/NykaaProducts?_limit=${limit}&_page=${page}&_sort=${sort}&_order=${orderBy}`;
     }
     // else if (orderBy && filterBy) {
     //   apiUrl = `http://localhost:8080/products?_limit=${limit}&_page=${page}&_sort=${sort}&_order=${orderBy}&brand=${filterBy}`;
     // }  
     else {
-      apiUrl = `http://localhost:8080/products?_limit=${limit}&_page=${page}`;
+      apiUrl = `https://wandering-clam-jacket.cyclic.app/NykaaProducts?_limit=${limit}&_page=${page}`;
     }
 
     axios
