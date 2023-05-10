@@ -48,13 +48,21 @@
 }
 /* for lower Navbar */
 .mainDownNav {
-  height: 30px;
-  background-color: rgb(34, 46, 58);
-  display: flex;
+  background-image: url("https://adn-static1.nykaa.com/media/wysiwyg/2021/common-strip.jpg");
+  height: 35px;
 }
-.mainImage{
+.mainDownNav1 {
+  width: 90%;
   margin: auto;
-  height: 30px;
+  display: flex;
+  background-image: url("https://adn-static1.nykaa.com/media/wysiwyg/2021/common-strip.jpg");
+  height: 35px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.mainImage {
+  width: 100%;
 }
 
 @media screen and (min-width: 10px) {
@@ -122,5 +130,4 @@
     align-items: center;
     padding-top: 0.5%;
   }
-  
 }
