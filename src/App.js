@@ -1,5 +1,4 @@
-
-import { Footer } from "./Components/Footer/1Footer";
+import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 // import { LandingPage } from "./Components/LandingPage/LandingPage";
 import AllRoutes from "./Pages/AllRoutes";
