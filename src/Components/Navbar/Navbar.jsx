@@ -30,7 +30,7 @@ import styles from "./Navbar.module.css";
 import ButtonLogout from "./ButtonLogout";
 import { useToast } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-import img from "../Assets/trendy1.jpeg"
+import img from "../Assets/nykaa.png"
 import NavDrawer from "./NavDrawer";
 
 const NAV_ITEMS = [
