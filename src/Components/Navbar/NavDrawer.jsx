@@ -8,7 +8,6 @@ import {
   DrawerHeader,
   DrawerOverlay,
   Heading,
-  Input,
   Text,
   useDisclosure,
 } from "@chakra-ui/react";
@@ -23,10 +22,10 @@ export default function NavDrawer() {
 
   return (
     <>
-      <Text color={"white"} ref={btnRef} onClick={onOpen} cursor={"pointer"}>
+      <Text color={"Black"} ref={btnRef} onClick={onOpen} cursor={"pointer"}>
         <div style={{ display: "flex" }}>
-          <VscThreeBars fontSize={"23px"} />
-          <p style={{ marginLeft: "5px" }}>All</p>
+          <VscThreeBars fontSize={"23px"} color="deeppink" />
+          <p style={{ marginLeft: "5px",fontWeight:"600" }}>All</p>
         </div>
       </Text>
       <Drawer
@@ -39,7 +38,7 @@ export default function NavDrawer() {
         <DrawerContent>
           <DrawerCloseButton />
           <DrawerHeader
-            background={"rgb(40,55,69)"}
+            background={"rgb(255,145,187)"}
             color={"white"}
             display={"flex"}
           >
@@ -48,72 +47,40 @@ export default function NavDrawer() {
           </DrawerHeader>
 
           <DrawerBody>
-            <Heading as="h4" size="md">
+            <Heading as="h4" size="md" color>
               Trending Products
             </Heading>
-            <Text fontSize="lg" lineHeight={"30px"}>
-              <Link to={"/products"}>All products</Link>
+            <Text fontSize="lg" lineHeight={"30px"} color={"deeppink"}>
+              <Link to={"/allproducts?page=1"} onClick={onClose}>All products</Link>
             </Text>
-            <Text fontSize="lg" lineHeight={"30px"}>
-              Electronics
-            </Text>
-            <Text fontSize="lg" lineHeight={"30px"}>
-              Mobile sale
-            </Text>
-            <Text fontSize="lg" lineHeight={"30px"}>
-              Summer sale
+            <Text fontSize="lg" lineHeight={"30px"} color={"deeppink"}>
+              Brands
             </Text>
             <hr />
             <br />
 
             <Heading as="h4" size="md">
-              Top Products
+              Top Brands
             </Heading>
-            <Text fontSize="lg" lineHeight={"30px"}>
-              iPhone 14 pro max
+            <Text fontSize="lg" lineHeight={"30px"} color={"deeppink"}>
+              <Link to={"/allproducts?page=1&filterBy=Lakme"}>Lakme</Link>
             </Text>
-            <Text fontSize="lg" lineHeight={"30px"}>
-              Boat Headphones
+            <Text fontSize="lg" lineHeight={"30px"} color={"deeppink"}>
+              <Link to={"/allproducts?page=1&filterBy=Nivea"}>Nivea</Link>
             </Text>
-            <Text fontSize="lg" lineHeight={"30px"}>
-              ADIDAS shoes
+            <Text fontSize="lg" lineHeight={"30px"} color={"deeppink"}>
+              <Link to={"/allproducts?page=1&filterBy=Maybelline"}>Maybelline</Link>
+            </Text>
+            <Text fontSize="lg" lineHeight={"30px"} color={"deeppink"}>
+              <Link to={"/allproducts?page=1&filterBy=Lotus"}>Lotus</Link>
+            </Text>
+            <Text fontSize="lg" lineHeight={"30px"} color={"deeppink"}>
+              <Link to={"/allproducts?page=1&filterBy=MAC"}>MAC</Link>
+            </Text>
+            <Text fontSize="lg" lineHeight={"30px"} color={"deeppink"}>
+              <Link to={"/allproducts?page=1&filterBy=Nykaa"}>Nykaa</Link>
             </Text>
             <hr />
-            <br />
-
-            <Heading as="h4" size="md">
-              Summer sale products
-            </Heading>
-            <Text fontSize="lg" lineHeight={"30px"}>
-              Summer T-shirt
-            </Text>
-            <Text fontSize="lg" lineHeight={"30px"}>
-              Summer Slippers
-            </Text>
-            <Text fontSize="lg" lineHeight={"30px"}>
-              Summer supliments
-            </Text>
-            <Text fontSize="lg" lineHeight={"30px"}>
-              Summer fruits
-            </Text>
-            <hr />
-            <br />
-
-            <Heading as="h4" size="md">
-              Children Zone
-            </Heading>
-            <Text fontSize="lg" lineHeight={"30px"}>
-              T-shirt
-            </Text>
-            <Text fontSize="lg" lineHeight={"30px"}>
-              Pants
-            </Text>
-            <Text fontSize="lg" lineHeight={"30px"}>
-              Shoes
-            </Text>
-            <Text fontSize="lg" lineHeight={"30px"}>
-              baby food
-            </Text>
           </DrawerBody>
 
           <DrawerFooter>

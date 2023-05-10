@@ -36,27 +36,27 @@ import NavDrawer from "./NavDrawer";
 const NAV_ITEMS = [
   {
     label: "Products",
+    href: "/allproducts?page=1",
+  },
+  {
+    label: "Categories",
     href: "/",
   },
   {
-    label: "MiniTV",
+    label: "Brands",
     href: "/",
   },
   {
-    label: "BestSeller",
+    label: "Luxe",
     href: "/",
   },
   {
-    label: "Mobiles",
-    href: "/",
-  },
-  {
-    label: "CustomerService",
+    label: "NykaaFashion",
     href: "/",
   },
 
   {
-    label: "Electronics",
+    label: "BeautyAdvice",
     href: "/",
   },
 ];
@@ -78,7 +78,7 @@ export default function Navbar() {
 
   return (
     <>
-      <Box position={"sticky"} top={"0px"} zIndex={"1000"} border={"1px solid"}>
+      <Box position={"sticky"} top={"-1px"} zIndex={"1000"} border={"1px solid lightgray"}>
         <Flex
           bg={"white"}
           color={useColorModeValue("gray.600", "white")}
@@ -87,7 +87,7 @@ export default function Navbar() {
           py={{ base: 2 }}
           px={{ base: 4 }}
           align={"center"}
-          width={"90%"}
+          width={"95%"}
           margin={"auto"}
         >
           <Flex
@@ -175,7 +175,7 @@ export default function Navbar() {
                   fontWeight={400}
                   variant={"link"}
                   href={"/signin"}
-                  color={"white"}
+                  color={"deeppink"}
                   // bg={"blue"}
                 >
                   Sign In
@@ -187,7 +187,7 @@ export default function Navbar() {
                   fontSize={"sm"}
                   fontWeight={600}
                   color={"white"}
-                  bg={"black"}
+                  bg={"deeppink"}
                   href={"/signup"}
                   _hover={{
                     bg: "rgb(64,66,68)",
@@ -375,11 +375,11 @@ const DesktopNav = () => {
       <Input
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        border={"1px solid white"}
+        // border={"1px solid deeppink"}
         padding={"5px"}
-        fontSize={"14px"}
-        height={"25px"}
-        color={"white"}
+        fontSize={"16px"}
+        height={"35px"}
+        color={"deeppink"}
         className={styles.searchInput}
         placeholder="Search on Nykaa"
       />
@@ -401,14 +401,14 @@ const DesktopNav = () => {
       )}
       {suggation.length > 0 && (
         <Box
-          border={"1px solid black transparent"}
+          border={"1px solid lightgray"}
           maxH={"200px"}
           position={"absolute"}
           w={"30%"}
           left={"37%"}
           top={"69px"}
           zIndex={"10"}
-          bg={"lightgray"}
+          bg={"rgb(250,237,242)"}
           borderRadius={"5px"}
           overflow={"hidden scroll"}
           opacity={".9"}
@@ -421,9 +421,9 @@ const DesktopNav = () => {
                   setQuery("");
                   window.reload();
                 }}
-                to={`/product/${item.id}`}
+                to={`/allproducts/${item.id}`}
               >
-                <Text textAlign={"center"} color={"black"} cursor={"pointer"}>
+                <Text textAlign={"center"} color={"deeppink"} cursor={"pointer"}>
                   {item.title}
                 </Text>
               </Link>
