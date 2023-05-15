@@ -87,7 +87,7 @@ export default function Navbar() {
           py={{ base: 2 }}
           px={{ base: 4 }}
           align={"center"}
-          width={"95%"}
+          width={"92.8%"}
           margin={"auto"}
         >
           <Flex

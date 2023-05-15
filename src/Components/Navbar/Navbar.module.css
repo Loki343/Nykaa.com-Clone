@@ -52,11 +52,11 @@
   height: 35px;
 }
 .mainDownNav1 {
-  width: 90%;
+  width: 89%;
   margin: auto;
   display: flex;
   background-image: url("https://adn-static1.nykaa.com/media/wysiwyg/2021/common-strip.jpg");
-  height: 35px;
+  height: 38 px;
   align-items: center;
   display: flex;
   justify-content: space-between;
