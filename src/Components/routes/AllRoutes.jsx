@@ -1,12 +1,12 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import AllProducts from "./AllProducts/AllProducts";
-import Login from "./Login/Login";
-import Signup from "./Signup/Signup";
-import { LandingPage } from "../Components/LandingPage/LandingPage.jsx";
-import Cart from './Cart/Cart';
-import { SingleProduct } from './SingleProduct/SingleProduct';
-import PrivateRoute from "./PrivateRoute";
+import AllProducts from "../../Pages/AllProducts/AllProducts";
+import Login from "../../Pages/Login/Login";
+import Signup from "../../Pages/Signup/Signup";
+import { LandingPage } from "../LandingPage/LandingPage.jsx";
+import Cart from '../../Pages/Cart/Cart';
+import { SingleProduct } from '../../Pages/SingleProduct/SingleProduct';
+import PrivateRoute from "../../Pages/PrivateRoute";
 
 function AllRoutes() {
   return (
@@ -14,7 +14,7 @@ function AllRoutes() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/allproducts" element={<AllProducts />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/signin" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/cart" element={<PrivateRoute><Cart /></PrivateRoute>} />
         <Route path="/allproducts/:id" element={<SingleProduct />} />

@@ -11,6 +11,7 @@ import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthContext";
 import styles from "./Login.module.css";
+import { useToast } from "@chakra-ui/react";
 
 function Login() {
   const [email, setemail] = useState("");
@@ -18,34 +19,62 @@ function Login() {
   const [load, setload] = useState(false);
   const navigate = useNavigate();
   const { loginUser } = useContext(AuthContext);
+  const toast = useToast();
+
+  const signupSuccess = () => {
+    toast({
+      title: "Signin Successful.",
+      description: "Thank You for signin",
+      status: "success",
+      duration: 3000,
+      isClosable: true,
+      position: "top",
+    });
+  };
+
+  const signupfailure = () => {
+    toast({
+      title: "Email or password wrong",
+      description: "Please enter your right credentials",
+      status: "error",
+      duration: 3000,
+      isClosable: true,
+      position: "top",
+    });
+  };
 
   const submitLogin = async () => {
     setload(true);
     console.log(load);
     try {
-      let res = await fetch(`https://mockserver-fhbg.onrender.com/users`);
+      let res = await fetch(
+        `https://wandering-clam-jacket.cyclic.app/NykaaUsers`
+      );
       let data = await res.json();
       console.log(data);
       let Auth = false;
       for (let i in data) {
         if (data[i].email === email && data[i].Password === Password) {
+          localStorage.setItem("name", data[i].name);
           Auth = true;
           loginUser(data[i].name);
-          console.log(data[i].name);
+          // console.log(data[i].name);
           break;
         }
       }
       setload(false);
       if (Auth === false) {
-        alert("Please enter right email or password!");
+        signupfailure();
+        // alert("Please enter right email or password!");
       } else {
-        alert("Login Successfull!");
+        // alert("Login Successfull!");
+        signupSuccess();
         navigate("/");
+        window.location.reload();
       }
       console.log(Auth);
     } catch (error) {
       setload(false);
-
       console.log(error);
     }
     setemail("");

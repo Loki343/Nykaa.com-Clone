@@ -48,7 +48,7 @@ export default function ButtonLogout({logout}) {
               <Button variant="outline" onClick={onToggle}>
                 NO
               </Button>
-              <Button colorScheme="red" onClick={logOutSuccess}>
+              <Button background={'deeppink'} color={'white'} onClick={logOutSuccess}>
                 YES
               </Button>
             </ButtonGroup>

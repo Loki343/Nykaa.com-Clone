@@ -39,7 +39,7 @@ const Cart = () => {
     navigate("/");
     alert("Your is Placed!!Keep shopping")
   };
-
+console.log(state);
   return (
     <Box>
       <Heading

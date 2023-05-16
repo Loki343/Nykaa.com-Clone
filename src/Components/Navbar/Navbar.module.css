@@ -49,14 +49,13 @@
 /* for lower Navbar */
 .mainDownNav {
   background-image: url("https://adn-static1.nykaa.com/media/wysiwyg/2021/common-strip.jpg");
-  height: 35px;
 }
 .mainDownNav1 {
   width: 89%;
   margin: auto;
   display: flex;
   background-image: url("https://adn-static1.nykaa.com/media/wysiwyg/2021/common-strip.jpg");
-  height: 38 px;
+  height: 38px;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -68,6 +67,7 @@
 @media screen and (min-width: 10px) {
   .name {
     width: 70px;
+    color: deeppink;
   }
   .optionLink1 {
     font-size: 6px;

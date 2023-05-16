@@ -35,15 +35,46 @@ import NavDrawer from "./NavDrawer";
 
 const NAV_ITEMS = [
   {
+    label: "Brands",
+    children: [
+      {
+        label: "Lakme",
+        subLabel: "India's largest brand",
+        href: "/allproducts?page=1",
+      },
+      {
+        label: "Nivea",
+        subLabel: "India's oldest trustable brand",
+        href: "/allproducts?page=1",
+      },
+      {
+        label: "Maybelline",
+        subLabel: "India's most selling brand",
+        href: "/allproducts?page=1",
+      },
+      {
+        label: "Lotus",
+        subLabel: "Get your best choice",
+        href: "/allproducts?page=1",
+      },
+      {
+        label: "MAC",
+        subLabel: "World's best cosmetics",
+        href: "/allproducts?page=1",
+      },
+      {
+        label: "Nykaa",
+        subLabel: "Get your best product at low cost",
+        href: "/allproducts?page=1",
+      },
+    ],
+  },
+  {
     label: "Products",
     href: "/allproducts?page=1",
   },
   {
     label: "Categories",
-    href: "/",
-  },
-  {
-    label: "Brands",
     href: "/",
   },
   {
@@ -78,7 +109,13 @@ export default function Navbar() {
 
   return (
     <>
-      <Box position={"sticky"} top={"-1px"} zIndex={"1000"} border={"1px solid lightgray"}>
+      <Box
+        position={"sticky"}
+        top={"-1px"}
+        zIndex={"1000"}
+        border={"1px solid lightgray"}
+        background={"white"}
+      >
         <Flex
           bg={"white"}
           color={useColorModeValue("gray.600", "white")}
@@ -143,7 +180,7 @@ export default function Navbar() {
                   <Tooltip
                     label={`You have ${0} items in the cart`}
                     fontSize="md"
-                    background="lightgrey"
+                    background="rgb(248,79,144)"
                     color={"white"}
                   >
                     <span style={{ marginLeft: "4px" }}>Cart : {0}</span>
@@ -210,7 +247,6 @@ export default function Navbar() {
 
 const DesktopNav = () => {
   const linkHoverColor = useColorModeValue("gray.800", "white");
-  const popoverContentBgColor = useColorModeValue("white", "gray.800");
   const [query, setQuery] = useState("");
   const [suggation, setSuggation] = useState([]);
 
@@ -356,11 +392,10 @@ const DesktopNav = () => {
               <PopoverContent
                 border={0}
                 boxShadow={"xl"}
-                bg={popoverContentBgColor}
                 p={4}
                 rounded={"xl"}
                 minW={"sm"}
-                bgColor={"black"}
+                bgColor={"rgba(241,206,226,.9)"}
               >
                 <Stack>
                   {navItem.children.map((child) => (
@@ -390,7 +425,7 @@ const DesktopNav = () => {
         >
           <span style={{ cursor: "pointer" }}>
             <RxCross1
-              color="white"
+              color="black"
               onClick={() => {
                 setQuery("");
               }}
@@ -423,7 +458,11 @@ const DesktopNav = () => {
                 }}
                 to={`/allproducts/${item.id}`}
               >
-                <Text textAlign={"center"} color={"deeppink"} cursor={"pointer"}>
+                <Text
+                  textAlign={"center"}
+                  color={"deeppink"}
+                  cursor={"pointer"}
+                >
                   {item.title}
                 </Text>
               </Link>
@@ -448,17 +487,17 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
       <Stack direction={"row"} align={"center"}>
         <Box>
           <Text
-            color={"whiteAlpha.600"}
+            color={"deeppink"}
             transition={"all .3s ease"}
-            _groupHover={{ color: "white" }}
+            _groupHover={{ color: "deeppink" }}
             fontWeight={500}
           >
             {label}
           </Text>
           <Text
             fontSize={"sm"}
-            color={"whiteAlpha.700"}
-            _groupHover={{ color: "white" }}
+            color={"deeppink"}
+            _groupHover={{ color: "deeppink" }}
           >
             {subLabel}
           </Text>
