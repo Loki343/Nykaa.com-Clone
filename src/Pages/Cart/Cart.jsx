@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import {
   Table,
   Thead,
@@ -25,21 +25,39 @@ import {
 import { checkout, removeFromCart } from "../../Components/CartContext/action";
 import { CartContext } from "../../Components/CartContext/CartContextProvider";
 import styles from "./Cart.module.css";
-import { useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Cart = () => {
-  const { state, dispatch } = useContext(CartContext);
+  // const { state, dispatch } = useContext(CartContext);
+  const [state, setState] = useState([]);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const cancelRef = React.useRef();
   const navigate = useNavigate();
 
-  const handleCheckout = () => {
-    dispatch(checkout());
-    onClose();
-    navigate("/");
-    alert("Your is Placed!!Keep shopping")
+  const getCartData = async () => {
+    let res = await axios.get(
+      "https://wandering-clam-jacket.cyclic.app/NykaaCart"
+    );
+    console.log(res.data);
+    setState(res.data);
   };
-console.log(state);
+
+  useEffect(() => {
+    getCartData();
+  }, []);
+
+  const handleDelete = async (id) => {
+    await axios.delete(
+      `https://wandering-clam-jacket.cyclic.app/NykaaCart/${id}`
+    );
+  };
+
+  const emptyCart = () => {
+    // axios.post("https://wandering-clam-jacket.cyclic.app/NykaaCart", {});
+    navigate("/");
+  };
+
   return (
     <Box>
       <Heading
@@ -74,7 +92,7 @@ console.log(state);
                 <Td fontSize={{ base: "xs", md: "md" }}>{cartItem.title}</Td>
                 <Td fontSize={{ base: "xs", md: "md" }}>₹ {cartItem.price}</Td>
                 <Td fontSize={{ base: "xs", md: "md" }}>
-                  <Button onClick={() => dispatch(removeFromCart(cartItem.id))}>
+                  <Button onClick={() => handleDelete(cartItem.id)}>
                     Remove From Cart ✖
                   </Button>
                 </Td>
@@ -86,7 +104,7 @@ console.log(state);
               <Th fontSize={{ base: "xs", md: "md" }}>Final Price</Th>
               <Th fontSize={{ base: "xs", md: "md" }}>...</Th>
               <Th fontSize={{ base: "xs", md: "md" }}>
-              ₹ {Math.round(state.reduce((a, c) => a + c.price, 0))}
+                ₹ {Math.round(state.reduce((a, c) => a + c.price, 0))}
               </Th>
             </Tr>
           </Tfoot>
@@ -116,7 +134,12 @@ console.log(state);
                   Cancle
                 </Button>
 
-                <Button colorScheme="red" onClick={handleCheckout} ml={3}>
+                <Button
+                  color={"white"}
+                  background="deeppink"
+                  onClick={() => emptyCart()}
+                  ml={3}
+                >
                   Yes
                 </Button>
               </AlertDialogFooter>

@@ -1,4 +1,3 @@
-
 import styles from "./AllProducts.module.css";
 import { Heading } from "@chakra-ui/react";
 import { useState, useContext } from "react";
@@ -60,15 +59,14 @@ function AllProducts() {
 
   useEffect(() => {
     let apiUrl;
-    if(filterBy){
+    if (filterBy) {
       apiUrl = `https://wandering-clam-jacket.cyclic.app/NykaaProducts?_limit=${limit}&_page=${page}&brand=${filterBy}`;
-    }
-    else if (orderBy) {
+    } else if (orderBy) {
       apiUrl = `https://wandering-clam-jacket.cyclic.app/NykaaProducts?_limit=${limit}&_page=${page}&_sort=${sort}&_order=${orderBy}`;
     }
     // else if (orderBy && filterBy) {
     //   apiUrl = `http://localhost:8080/products?_limit=${limit}&_page=${page}&_sort=${sort}&_order=${orderBy}&brand=${filterBy}`;
-    // }  
+    // }
     else {
       apiUrl = `https://wandering-clam-jacket.cyclic.app/NykaaProducts?_limit=${limit}&_page=${page}`;
     }
@@ -77,25 +75,33 @@ function AllProducts() {
       .get(apiUrl)
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
-  }, [page, orderBy,filterBy]);
+  }, [page, orderBy, filterBy]);
 
   useEffect(() => {
     let params = { page };
     if (orderBy) {
       params.orderBy = orderBy;
     }
-    if(filterBy){
-      params.filterBy=filterBy
+    if (filterBy) {
+      params.filterBy = filterBy;
     }
 
     setSearchParams(params);
-  }, [page, orderBy,filterBy]);
+  }, [page, orderBy, filterBy]);
 
   const sortByPrice = (val) => {
     SetOrderBy(val);
   };
   const filterByBrand = (val) => {
     setFilterBy(val);
+  };
+
+  const addedToCart = (title, price, image) => {
+    console.log(title, price, image);
+    axios.post("https://wandering-clam-jacket.cyclic.app/NykaaCart",{
+      title,price,image
+    })
+    // window.location.reload()
   };
 
   return (
@@ -109,13 +115,19 @@ function AllProducts() {
         All Products
       </Heading>
       <div className={styles.sortFilter}>
-        <select className={styles.sorting} onChange={(e) => sortByPrice(e.target.value)}>
+        <select
+          className={styles.sorting}
+          onChange={(e) => sortByPrice(e.target.value)}
+        >
           <option value="">Sort By Price</option>
           <option value="asc">Low to High</option>
           <option value="desc">High to Low</option>
           <option value="">Reset</option>
         </select>
-        <select className={styles.filtering} onChange={(e) => filterByBrand(e.target.value)}>
+        <select
+          className={styles.filtering}
+          onChange={(e) => filterByBrand(e.target.value)}
+        >
           <option value="">Filter By Brand</option>
           <option value="Lakme">Lakme</option>
           <option value="Nivea">Nivea</option>
@@ -135,7 +147,7 @@ function AllProducts() {
             title={prod.title}
             price={prod.price}
             brand={prod.brand}
-            onClick={() => dispatch(addToCart(prod))}
+            onClick={() => addedToCart(prod.title, prod.price, prod.image)}
             disabled={itemAlreadyExist(prod.id, state)}
           />
         ))}

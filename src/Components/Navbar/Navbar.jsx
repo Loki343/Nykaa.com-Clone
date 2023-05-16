@@ -32,6 +32,7 @@ import { useToast } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import img from "../Assets/nykaa.png";
 import NavDrawer from "./NavDrawer";
+import axios from "axios";
 
 const NAV_ITEMS = [
   {
@@ -95,7 +96,20 @@ const NAV_ITEMS = [
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
   const toast = useToast();
+  const [state, setState] = useState([]);
 
+  const getCartData = async () => {
+    let res = await axios.get(
+      "https://wandering-clam-jacket.cyclic.app/NykaaCart"
+    );
+    console.log(res.data);
+    setState(res.data);
+  };
+
+  useEffect(() => {
+    getCartData();
+  }, []);
+console.log(state.length);
   const logoutSuccess = () => {
     toast({
       title: "Logout Successful.",
@@ -178,12 +192,12 @@ export default function Navbar() {
                 >
                   <BsFillBagCheckFill />
                   <Tooltip
-                    label={`You have ${0} items in the cart`}
+                    label={`Click to go into the cart`}
                     fontSize="md"
                     background="rgb(248,79,144)"
                     color={"white"}
                   >
-                    <span style={{ marginLeft: "4px" }}>Cart : {0}</span>
+                    <span style={{ marginLeft: "4px" }}>Cart</span>
                   </Tooltip>
                 </Button>
 
