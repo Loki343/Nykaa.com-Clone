@@ -174,12 +174,42 @@
       "id": 1
     }
   ],
-  "cart": [
+  "NykaaCart": [
+    {
+      "title": "Maybelline New York Fit Me Matte+Poreless Liquid",
+      "price": 419,
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/6/66e316c6902395646860.jpg",
+      "id": 1
+    },
     {
       "title": "Lakme 9 To 5 Primer + Matte Powder Compact",
       "price": 699,
       "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/d/5/d5221c9LAKME00000681_1.jpg",
-      "id": 1
+      "id": 2
+    },
+    {
+      "title": "Nykaa So Creme! Creamy Matte Lipstick",
+      "price": 244,
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/a/0a4f3ef8904245711047_1.jpg",
+      "id": 3
+    },
+    {
+      "title": "M.A.C Strobe Cream / Mini Hydratant Lumineux Pinklite",
+      "price": 1100,
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/b/0b50cb3773602575534.jpg",
+      "id": 4
+    },
+    {
+      "title": "Lakme 9 To 5 Primer + Matte Powder Compact",
+      "price": 699,
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/d/5/d5221c9LAKME00000681_1.jpg",
+      "id": 5
+    },
+    {
+      "title": "Maybelline New York Fit Me Matte+Poreless Liquid",
+      "price": 419,
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/6/66e316c6902395646860.jpg",
+      "id": 6
     }
   ]
 }

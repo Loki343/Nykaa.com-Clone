@@ -207,6 +207,7 @@ export default function Footer() {
                 flexGrow: 1,
                 ml: 8,
               }}
+              // border={"1px solid"}
             >
               <img src={logo} width={"45px"} alt="logo" />
             </Flex>

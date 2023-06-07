@@ -15,6 +15,7 @@ import { useToast } from "@chakra-ui/react";
 
 function Signup() {
   const [Password, setPassword] = useState("");
+  const [rePass, setRePass] = useState("");
   const [name, setname] = useState("");
   const [email, setemail] = useState("");
   const [load, setload] = useState(false);
@@ -80,28 +81,31 @@ function Signup() {
       console.log(error);
     }
     // for mail existance check
-    if (email.includes("@gmail.com") && email.length > 0 && Password.length > 0 && name.length > 0) {
+    if (
+      email.includes("@gmail.com") &&
+      email.length > 0 &&
+      Password.length > 0 &&
+      name.length > 0 &&
+      Password === rePass
+    ) {
       try {
-        await fetch(
-          `https://wandering-clam-jacket.cyclic.app/NykaaUsers`,
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              name,
-              email,
-              Password,
-            }),
-          }
-        );
+        await fetch(`https://wandering-clam-jacket.cyclic.app/NykaaUsers`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            Password,
+          }),
+        });
         setload(false);
       } catch (error) {
         setload(false);
         console.log(error);
       }
-      signupSuccess()
+      signupSuccess();
       navigate("/signin");
       setname("");
       setemail("");
@@ -159,7 +163,12 @@ function Signup() {
             type="password"
           />
           <FormLabel>Re-Enter Password</FormLabel>
-          <Input placeholder="Re-Enter Your Password" type="password" />
+          <Input
+            placeholder="Re-Enter Your Password (*required)"
+            type="password"
+            value={rePass}
+            onChange={(e) => setRePass(e.target.value)}
+          />
           <FormHelperText>
             We'll never share your Email & Password.
           </FormHelperText>

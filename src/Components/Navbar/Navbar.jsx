@@ -102,14 +102,14 @@ export default function Navbar() {
     let res = await axios.get(
       "https://wandering-clam-jacket.cyclic.app/NykaaCart"
     );
-    console.log(res.data);
+    // console.log(res.data);
     setState(res.data);
   };
 
   useEffect(() => {
     getCartData();
   }, []);
-console.log(state.length);
+// console.log(state.length);
   const logoutSuccess = () => {
     toast({
       title: "Logout Successful.",
@@ -212,7 +212,7 @@ console.log(state.length);
                     style={{ marginRight: "10px" }}
                     logout={() => {
                       logoutSuccess();
-                      localStorage.clear();
+                      localStorage.setItem("name","");
                       window.location.reload();
                     }}
                   />

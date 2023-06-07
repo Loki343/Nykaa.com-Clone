@@ -22,10 +22,8 @@ import {
   Image,
   Heading,
 } from "@chakra-ui/react";
-import { checkout, removeFromCart } from "../../Components/CartContext/action";
-import { CartContext } from "../../Components/CartContext/CartContextProvider";
 import styles from "./Cart.module.css";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Cart = () => {
@@ -39,7 +37,7 @@ const Cart = () => {
     let res = await axios.get(
       "https://wandering-clam-jacket.cyclic.app/NykaaCart"
     );
-    console.log(res.data);
+    // console.log(res.data);
     setState(res.data);
   };
 
@@ -47,10 +45,11 @@ const Cart = () => {
     getCartData();
   }, []);
 
-  const handleDelete = async (id) => {
-    await axios.delete(
+  const handleDelete =  (id) => {
+     axios.delete(
       `https://wandering-clam-jacket.cyclic.app/NykaaCart/${id}`
     );
+    // window.location.reload();
   };
 
   const emptyCart = () => {
@@ -92,7 +91,12 @@ const Cart = () => {
                 <Td fontSize={{ base: "xs", md: "md" }}>{cartItem.title}</Td>
                 <Td fontSize={{ base: "xs", md: "md" }}>₹ {cartItem.price}</Td>
                 <Td fontSize={{ base: "xs", md: "md" }}>
-                  <Button onClick={() => handleDelete(cartItem.id)}>
+                  <Button
+                    onClick={() => {
+                      handleDelete(cartItem.id);
+                      window.location.reload();
+                    }}
+                  >
                     Remove From Cart ✖
                   </Button>
                 </Td>
