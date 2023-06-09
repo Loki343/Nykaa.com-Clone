@@ -53,7 +53,7 @@ function AllProducts() {
   );
   const [orderBy, SetOrderBy] = useState("");
   const [filterBy, setFilterBy] = useState("");
-// kk
+// k
   const sort = "price";
   const limit = 8;
 
