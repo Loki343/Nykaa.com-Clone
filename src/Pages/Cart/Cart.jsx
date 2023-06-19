@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Table,
   Thead,
@@ -45,16 +45,31 @@ const Cart = () => {
     getCartData();
   }, []);
 
-  const handleDelete =  (id) => {
-     axios.delete(
+  const handleDelete = async (id) => {
+    await axios.delete(
       `https://wandering-clam-jacket.cyclic.app/NykaaCart/${id}`
     );
     // window.location.reload();
   };
 
-  const emptyCart = () => {
-    // axios.post("https://wandering-clam-jacket.cyclic.app/NykaaCart", {});
-    navigate("/");
+  const emptyCart = async () => {
+    // fetch("https://wandering-clam-jacket.cyclic.app/NykaaCart", {
+    //   method: "DELETE",
+    // })
+    //   .then((response) => {
+    //     if (response.ok) {
+    //       console.log("Cart emptied successfully!");
+    //     } else {
+    //       console.log(
+    //         "Failed to empty the cart. Status code:",
+    //         response.status
+    //         );
+    //       }
+    //     })
+    //     .catch((error) => {
+    //       console.error("An error occurred:", error);
+    //     });
+        navigate("/");
   };
 
   return (
