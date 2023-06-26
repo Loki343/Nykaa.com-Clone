@@ -68,7 +68,7 @@ const Cart = () => {
     //     })
     //     .catch((error) => {
     //       console.error("An error occurred:", error);
-    //     })
+    //     });
         navigate("/");
   };
 
